@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Anthemia';
+    src: url('AnthemiaRegular.eot');
+    src: url('AnthemiaRegular.eot?#iefix') format('embedded-opentype'),
+        url('AnthemiaRegular.woff2') format('woff2'),
+        url('AnthemiaRegular.woff') format('woff'),
+        url('AnthemiaRegular.ttf') format('truetype'),
+        url('AnthemiaRegular.svg#AnthemiaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vindigater';
+    src: url('Vindigater.eot');
+    src: url('Vindigater.eot?#iefix') format('embedded-opentype'),
+        url('Vindigater.woff2') format('woff2'),
+        url('Vindigater.woff') format('woff'),
+        url('Vindigater.ttf') format('truetype'),
+        url('Vindigater.svg#Vindigater') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Candlefish';
+    src: url('Candlefish.eot');
+    src: url('Candlefish.eot?#iefix') format('embedded-opentype'),
+        url('Candlefish.woff2') format('woff2'),
+        url('Candlefish.woff') format('woff'),
+        url('Candlefish.ttf') format('truetype'),
+        url('Candlefish.svg#Candlefish') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

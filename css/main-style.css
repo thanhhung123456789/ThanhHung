@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+	background-color: #EEEEEE;
+	color: #05158A;
+	font-family:
+		 "Noto Sans",Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin:0 /*bỏ đẩy lề trang web*/
+	
+		
+}
+.font-subbtitle
+{
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,h2
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+h1{font-size: 40px;
+background: tomato;
+background: linear-gradient(red,green);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;	
+	
+}
+h2{font-size: 35px}
+h3{font-size: 30px}
+h4{font-size: 30px}
+h5{font-size: 35px}
+h6{font-size: 18px}
+h7{font-size: 18px}
+hi,h2,h3,h4,h5,h6{ margin-bottom: 0; margin-top: 0}
+a{
+	color: red;
+     text-decoration:none 
+}
+a:hover/* khi đưa chuột và chữ có thẻ a-liên kết trang web nào đó*/
+{
+	color:crimson
+}
+/*---------------- layuot bo cuc web---small---------*/
+.container-fluid
+{
+	width: 100%; padding-left: 16px; padding-right: 16px
+}
+/*------- mobile first----------*/
+.container
+{
+	width:95%; margin: auto
+}
+/*-----------size container cho tablet(ipad)------*/
+@media (min-width:600px)
+{
+	.container
+{
+	width:90%; margin: auto
+}
+}
+/*------- mobile first----------*/
+.container
+{
+	width:95%; margin: auto
+}
+/*-----------size container cho pc---large---*/
+@media (min-width:1000px)
+{
+	.container
+{
+	width:80%; margin: auto
+}
+}
+/*------ chia he thong gird 12 column*/
+.col-1{ width: 8.3333%}
+.col-2{ width: 16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width:  75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid red*/
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row
+{
+	display: flex;
+	flex-wrap:wrap
+		
+}
+.card
+{ 
+	background: white;
+	border-radius: 9px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+ footer
+{ 
+   background:  #9F9B9B
+}
+
+/*----  style hệ  thống màu chu cho web----*/
+.text-primary { color:#A25020}/*mau chu chinh(lam nhan y chinh*/
+.text-secondary { color:darkgreen}/*mau chu phu( lam nhan y phu trong thiet ke*/
+.text-light{ color: #B8B7B7}
+.text-dark {color:  #140E0E }
+/*----  style hệ  thống màu nen background cho web----*/
+
+.bg-primary { background-color:#A25020}
+.bg-secondary { background-color:darkgreen}
+.bg-light{ background-color:#B8B7B7 }
+.bg-dark { background-color: #140E0E}
+/*----  style hệ  thống mau cho nut button----*/
+.btn-primary
+{
+   background-color:#A25020;	
+   color:white;
+   padding:8px 16px;
+   border-radius: 4px;	
+}
+.btn-primary:hover{
+	background-color:#A25020; 
+	color:white
+	
+}
+
+.btn-secondary
+{
+   background-color:#A25020;	
+   color:white;
+   padding:8px 16px;
+   border-radius: 4px;	
+}
+.btn-secondary:hover{
+	background-color:#A25020; 
+	color:white
+	 	
+}
+
+.btn-outline-primary
+{
+	border: 1px pxdarkgreen soild;
+	color:darkgreen;
+     padding:8px 16px;
+     border-radius: 4px;
+	margin: 2px;
+}
+ .btn-outline-primary:hover
+{
+	background-color:#A25020;
+	color: white
+}
+
+/*style cho menu căn  bản chỉ dùng được tại pc*/
+ul.menu
+{
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content:flex-start
+}
+ul.menu li a
+{
+	padding: 8px 16px;
+	background-color: #3D15F8;
+	color: #FFF8F8;
+	
+	color:#F3F3F3; letter-spacing: 0.08rem;
+	margin: 2px;
+	display: block;
+}
+ul.menu li a:hover
+{
+	background-color:#0D05A0;
+	border-bottom: 2px solid #666;
+	color:#FFFFFF
+}
+ul.menu li
+{
+	position: relative
+}
+ul.menu .dropdown-menu
+{
+	width: 200px;
+	border: 1px solid green;
+	position: absolute; 
+	left: -30%;
+	top: 150%;
+	z-index: 9999;
+	background: #eee;
+	opacity: 0;
+	transition: all 1s;
+	/*transform: scaleY(0);
+	transform-origin: top center;*/
+	
+	}
+
+ul.menu .dropdown-menu a
+{
+	display: block
+}
+.banner{
+	position: relative
+}
+ul.menu li:hover >.dropdown-menu
+{
+	/*transform: scaleY(1);*/
+	left: 0;
+	top: 85%;
+	opacity: 1
+}
+.banner-caption { 
+	 padding: 20px; 
+	width: 40%;
+	/*border: 2px solid blue;*/
+	position: absolute;
+	right: 10%; top: 20%
+}
+
+
+
+
+
+
